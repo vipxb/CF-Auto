@@ -19,7 +19,7 @@ urls = [
     "https://cf.090227.xyz/",
     "https://stock.hostmonit.com/CloudFlareYes",
     "https://ip.164746.xyz/",
-    "https://monitor.gacjie.cn/page/cloudflare/ipv4.html",
+    "https:/wetest.vip/page/cloudflare/address_v4.html",
     "https://345673.xyz/"
 ]
 
@@ -87,7 +87,7 @@ def process_site_data(url):
                     latency_unit = 'ms'
                     data.append(f"{ip_address}-{latency_value}{latency_unit}")
 
-    elif "monitor.gacjie.cn" in url:
+    elif "wetest.vip" in url:
         rows = soup.find_all('tr')
         for row in rows:
             tds = row.find_all('td')
